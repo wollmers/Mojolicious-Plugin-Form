@@ -1,6 +1,8 @@
 package Mojolicious::Plugin::Form;
 use Mojo::Base 'Mojolicious::Plugin';
 
+our $VERSION = '0.000';
+
 sub register {
   my ($self, $app, $conf) = @_;
 
@@ -39,3 +41,50 @@ sub register {
 }
 
 1;
+
+__END__
+
+=head1 NAME
+
+Mojolicious::Plugin::Form - abstract forms for Mojolicious and DBIx::Class
+
+
+=head1 SYNOPSIS
+
+ $app->plugin('Mojolicious::Plugin::Form');
+
+
+=head1 DESCRIPTION
+
+L<Mojolicious::Plugin::Form> is a Mojolicious-Plugin.
+
+
+=head1 SEE ALSO
+
+=over
+
+=item *
+
+L<Mojolicious>
+
+=back
+
+=head1 SOURCE REPOSITORY
+
+L<http://github.com/wollmers/Mojolicious-Plugin-Form>
+
+=head1 AUTHOR
+
+Helmut Wollmersdorfer, E<lt>helmut.wollmersdorfer@gmail.comE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2013-2014 by Helmut Wollmersdorfer
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
+
+
+
