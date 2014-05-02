@@ -1,0 +1,18 @@
+Revision history for AproJo.
+
+{{$NEXT}}
+
+0.005  2014-05-02 12:50:08 CEST
+       - correct versions
+
+0.004  2014-04-28 17:13:14 CEST
+       - debug failed login test
+
+0.003  2014-04-24 12:20:09 CEST
+       - debug warnings (fails on CPANTesters), cleanup
+
+0.002  2014-04-23 15:21:26 CEST
+       - need Perl v5.10.1 as minimum
+
+0.001  2014-04-23 
+       - initial version
