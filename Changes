@@ -1,6 +1,8 @@
 Revision history for Mojolicious-Plugin-Form.
 
 {{$NEXT}}
+
+0.002  2014-05-03 03:24:22 CEST
        - initial version
        
 0.001  2014-05-03
