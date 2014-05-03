@@ -6,7 +6,4 @@ requires 'Mojolicious', '4.0';
 
 on test => sub {
     requires 'Test::More', '0.88';
-    requires 'DBD::SQLite', '0';
-    requires 'DBIx::Class', '0';
-    requires 'DBIx::Class::Schema', '0';
 };

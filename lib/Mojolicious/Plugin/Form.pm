@@ -1,7 +1,7 @@
 package Mojolicious::Plugin::Form;
 use Mojo::Base 'Mojolicious::Plugin';
 
-our $VERSION = '0.000';
+our $VERSION = '0.001';
 
 sub register {
   my ($self, $app, $conf) = @_;
