@@ -219,6 +219,8 @@ L<Mojolicious::Plugin::Form::Base> is a Mojolicious-Plugin.
 
 =head1 SEE ALSO
 
+=over
+
 =item *
 
 L<Mojolicious>
