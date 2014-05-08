@@ -1,6 +1,8 @@
 Revision history for Mojolicious-Plugin-Form.
 
 {{$NEXT}}
+
+0.003  2014-05-08 14:02:27 CEST
        - release to cpan
 
 0.002  2014-05-03 03:24:22 CEST
