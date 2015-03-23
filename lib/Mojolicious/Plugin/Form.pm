@@ -1,6 +1,8 @@
 package Mojolicious::Plugin::Form;
 use Mojo::Base 'Mojolicious::Plugin';
 
+use Mojo::Loader qw(data_section find_modules load_class);
+
 our $VERSION = '0.005';
 
 sub register {
@@ -26,7 +28,8 @@ sub register {
 
       $class_name = $namespace . $class_name;
       #my $e = Mojo::Loader->new->load($class_name);
-      my $e = Mojo::Loader->load_class($class_name);
+      #my $e = Mojo::Loader->load_class($class_name);
+      my $e = load_class($class_name);      
 
       Carp::croak qq/Can't load form '$class_name': / . $e->message
         if ref $e;
