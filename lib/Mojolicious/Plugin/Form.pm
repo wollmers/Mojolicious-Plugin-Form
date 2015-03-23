@@ -25,15 +25,16 @@ sub register {
       }
 
       $class_name = $namespace . $class_name;
-      my $e = Mojo::Loader->new->load($class_name);
+      #my $e = Mojo::Loader->new->load($class_name);
+      my $e = Mojo::Loader->load_class($class_name);
 
       Carp::croak qq/Can't load form '$class_name': / . $e->message
         if ref $e;
 
       Carp::croak qq/Can't find form '$class_name'/ if $e;
 
-      Carp::croak qq/Wrong form '$class_name' isa/
-        unless $class_name->isa(ref($self->app) . '::Form');
+      #Carp::croak qq/Wrong form '$class_name' isa /.ref($self->app) . '::Form' 
+      #  unless $class_name->isa(ref($self->app) . '::Form');
 
       return $class_name->new(%$conf, @_);
     }
