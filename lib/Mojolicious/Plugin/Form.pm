@@ -55,6 +55,9 @@ Mojolicious::Plugin::Form - abstract forms for Mojolicious and DBIx::Class
 =for html
 <a href="https://travis-ci.org/wollmers/Mojolicious-Plugin-Form"><img src="https://travis-ci.org/wollmers/Mojolicious-Plugin-Form.png" alt="Mojolicious-Plugin-Form"></a>
 <a href='https://coveralls.io/r/wollmers/Mojolicious-Plugin-Form?branch=master'><img src='https://coveralls.io/repos/wollmers/Mojolicious-Plugin-Form/badge.png?branch=master' alt='Coverage Status' /></a>
+<a href='http://cpants.cpanauthors.org/dist/Mojolicious-Plugin-Form'><img src='http://cpants.cpanauthors.org/dist/Mojolicious-Plugin-Form.png' alt='Kwalitee Score' /></a>
+<a href="http://badge.fury.io/pl/Mojolicious-Plugin-Form"><img src="https://badge.fury.io/pl/Mojolicious-Plugin-Form.svg" alt="CPAN version" height="18"></a>
+
 
 =head1 SYNOPSIS
 
@@ -83,6 +86,9 @@ L<http://github.com/wollmers/Mojolicious-Plugin-Form>
 =head1 AUTHOR
 
 Helmut Wollmersdorfer, E<lt>helmut.wollmersdorfer@gmail.comE<gt>
+
+=for html
+<a href='http://cpants.cpanauthors.org/author/wollmers'><img src='http://cpants.cpanauthors.org/author/wollmers.png' alt='Kwalitee Score' /></a>
 
 =head1 COPYRIGHT AND LICENSE
 
