@@ -43,11 +43,12 @@
       },
       "test" : {
          "requires" : {
+            "Test::Carp" : "0",
             "Test::More" : "0.88"
          }
       }
    },
-   "release_status" : "stable",
+   "release_status" : "testing",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/wollmers/Mojolicious-Plugin-Form/issues"
@@ -59,7 +60,7 @@
          "web" : "https://github.com/wollmers/Mojolicious-Plugin-Form"
       }
    },
-   "version" : "0.006",
+   "version" : "0.007",
    "x_contributors" : [
       "Helmut Wollmersdorfer <helmut@wollmersdorfer.at>",
       "Helmut Wollmersdorfer <helmut.wollmersdorfer@fixpunkt.de>"
