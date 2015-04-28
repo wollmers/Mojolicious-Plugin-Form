@@ -9,6 +9,8 @@ use Data::Dumper;
 use Test::More;
 END { done_testing(); }
 
+use Test::Carp;
+
 use Test::Mojo;
 
 use_ok('MyApp');
@@ -29,6 +31,23 @@ my $source = $sources[0];
 
 ok($source, 'MyApp source');
 
-my $table = $schema->class($source)->table;
+#my $table = $schema->class($source)->table;
 
-ok($table, 'MyApp table');
+ok($schema->class($source)->table, 'MyApp table');
+
+#my $form_handler = $t->app->form_handler('Foo');
+
+ok($t->app->form_handler('Foo'), 'MyApp form_handler');
+
+ok($t->app->form_handler('Foo',{a => 1}), 'MyApp form_handler with params');
+
+ok($t->app->form_handler('foo'), 'MyApp form_handler lowercase');
+
+does_croak( sub { $t->app->form_handler('Blah') } );
+
+#does_croak( sub { $t->app->form_handler('Defect') } );
+
+does_croak( sub { $t->app->form_handler() } );
+
+
+

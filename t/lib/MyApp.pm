@@ -43,18 +43,32 @@ sub class {
   return $self->entries->{$source};
 };
 
-package MySchema::Class;
-use Mojo::Base -base;
+package MySchema::Class {
+  use Mojo::Base -base;
 
-has 'table'; 
+  has 'table';
+  1; 
+}
 
-package MyApp::Form;
-use Mojo::Base 'Mojolicious::Plugin::Form::Base';
+package MyApp::Form {
+  use Mojo::Base 'Mojolicious::Plugin::Form::Base';
+  1;
+}
 
-package MyApp::Form::Foo;
-use Mojo::Base 'MyApp::Form';
+package MyApp::Form::Foo {
+  use Mojo::Base 'MyApp::Form';
+  1;
+}
 
-package MyApp::Form::Bar;
-use Mojo::Base 'MyApp::Form';
+package MyApp::Form::Bar {
+  use Mojo::Base 'MyApp::Form';
+  1;
+}
+
+package MyApp::Form::Defect {
+  use Mojo::Base 'MyApp::Form';
+
+  0; # TODO
+}
 
 1;

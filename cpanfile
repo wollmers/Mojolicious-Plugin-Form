@@ -6,4 +6,5 @@ requires 'Mojolicious', '4.0';
 
 on test => sub {
     requires 'Test::More', '0.88';
+    requires 'Test::Carp', '0';
 };

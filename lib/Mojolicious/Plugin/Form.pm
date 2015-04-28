@@ -22,8 +22,7 @@ sub register {
         my $namespace = ref($self->app) . '::Form::';
         $namespace = '' if $namespace =~ m/^Mojolicious::Lite/;
 
-        $class_name = join '' => $namespace,
-          Mojo::ByteStream->new($class_name)->camelize;
+        $class_name = Mojo::ByteStream->new($class_name)->camelize;
       }
 
       $class_name = $namespace . $class_name;
@@ -35,9 +34,6 @@ sub register {
         if ref $e;
 
       Carp::croak qq/Can't find form '$class_name'/ if $e;
-
-      #Carp::croak qq/Wrong form '$class_name' isa /.ref($self->app) . '::Form' 
-      #  unless $class_name->isa(ref($self->app) . '::Form');
 
       return $class_name->new(%$conf, @_);
     }
