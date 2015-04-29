@@ -3,7 +3,6 @@
 Mojolicious::Plugin::Form - abstract forms for Mojolicious and DBIx::Class
 
 <div>
-
     <a href="https://travis-ci.org/wollmers/Mojolicious-Plugin-Form"><img src="https://travis-ci.org/wollmers/Mojolicious-Plugin-Form.png" alt="Mojolicious-Plugin-Form"></a>
     <a href='https://coveralls.io/r/wollmers/Mojolicious-Plugin-Form?branch=master'><img src='https://coveralls.io/repos/wollmers/Mojolicious-Plugin-Form/badge.png?branch=master' alt='Coverage Status' /></a>
     <a href='http://cpants.cpanauthors.org/dist/Mojolicious-Plugin-Form'><img src='http://cpants.cpanauthors.org/dist/Mojolicious-Plugin-Form.png' alt='Kwalitee Score' /></a>
@@ -31,13 +30,12 @@ Mojolicious::Plugin::Form - abstract forms for Mojolicious and DBIx::Class
 Helmut Wollmersdorfer, <helmut.wollmersdorfer@gmail.com>
 
 <div>
-
     <a href='http://cpants.cpanauthors.org/author/wollmers'><img src='http://cpants.cpanauthors.org/author/wollmers.png' alt='Kwalitee Score' /></a>
 </div>
 
 # COPYRIGHT AND LICENSE
 
-Copyright (C) 2013-2014 by Helmut Wollmersdorfer
+Copyright (C) 2013-2015 by Helmut Wollmersdorfer
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
