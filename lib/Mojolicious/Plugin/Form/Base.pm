@@ -17,7 +17,7 @@ has 'name_field';
 
 has 'order_by';
 
-has 'form_debug' => 1;
+has 'form_debug' => 0;
 
 sub add_elements {
   my ($self, @elems) = @_;
@@ -66,7 +66,7 @@ sub from_schema {
 
   my $relationships = [ $schema->source($source)->relationships ];
 
-  print STDERR '$relationships: ', Dumper($relationships), "\n";
+  print STDERR '$relationships: ', Dumper($relationships), "\n" if $self->form_debug;;
 
   my $rel_elements;
   for my $relation (@$relationships) {
