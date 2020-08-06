@@ -59,7 +59,7 @@ sub from_schema {
   # TODO: smarter
   #my $primary_columns = [$schema->source($source)->primary_columns];
   #$self->id_field($primary_columns->[0]);
-  
+
   my ($id_field, $name_field) = $self->id_and_name($schema, $source);
   $self->id_field || $self->id_field($id_field);
   $self->name_field || $self->name_field($name_field);
@@ -73,16 +73,16 @@ sub from_schema {
     my $relationship = $self->related($schema, $source, $relation);
     $rel_elements->{$relation} = $relationship if $relationship;
   }
-  
+
   my $rel_multi;
   for my $relation (@$relationships) {
     my $relationship = $self->multi_related($schema, $source, $relation);
     $rel_multi->{$relation} = $relationship if $relationship;
-  }  
-  
+  }
+
   $self->elements         || $self->elements({});
   $self->ordered_elements || $self->ordered_elements([]);
-  
+
   for my $column (@$columns) {
     my $element;
 
@@ -92,7 +92,7 @@ sub from_schema {
     else {
       my $type = $self->type($columns_info->{$column}->{data_type});
       my $required = $columns_info->{$column}->{is_nullable} ? '' : 'required';
-      
+
       $element = {
         'type'     => $type,
         'name'     => $column,
@@ -108,12 +108,12 @@ sub from_schema {
     $self->elements->{$column} = $element;
     push @{$self->ordered_elements}, $column;
   }
-  
+
   for my $multi (keys %$rel_multi) {
     $self->elements->{$multi} = $rel_multi->{$multi};
-    push @{$self->ordered_elements}, $multi;  
+    push @{$self->ordered_elements}, $multi;
   }
-  
+
   print STDERR 'id_field: ',$self->id_field,' name_field: ',$self->name_field,"\n" if $self->form_debug;
   print STDERR 'elements: ',Dumper($self->elements),"\n" if $self->form_debug;
   return $self;

@@ -2,6 +2,15 @@ Revision history for Mojolicious-Plugin-Form.
 
 {{$NEXT}}
 
+0.008  2015-04-29 16:22:50 CEST
+       - improve tests
+
+0.007  2015-04-28 17:00:16 CEST
+       - improve coverage
+
+0.006  2015-04-07 16:30:03 CEST
+       - add badges in pod
+
 0.005  2014-08-16 23:39:44 CEST
        - badges in pod
 

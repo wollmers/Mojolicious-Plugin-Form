@@ -4,23 +4,23 @@
       "Helmut Wollmersdorfer, <helmut.wollmersdorfer@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 5.015, CPAN::Meta::Converter version 2.141170",
+   "generated_by" : "Dist::Milla version v1.0.20, Dist::Zilla version 6.008, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Mojolicious-Plugin-Form",
    "no_index" : {
       "directory" : [
-         "t",
-         "xt",
+         "eg",
+         "examples",
          "inc",
          "share",
-         "eg",
-         "examples"
+         "t",
+         "xt"
       ]
    },
    "prereqs" : {
@@ -31,19 +31,31 @@
       },
       "develop" : {
          "requires" : {
+            "Dist::Milla" : "v1.0.20",
             "Test::Pod" : "1.41"
          }
       },
       "runtime" : {
          "requires" : {
-            "Mojolicious" : "4.0",
-            "perl" : "5.010001"
+            "Mojolicious" : "8.0",
+            "perl" : "5.020001"
          }
       },
       "test" : {
          "requires" : {
+            "Test::Carp" : "0",
             "Test::More" : "0.88"
          }
+      }
+   },
+   "provides" : {
+      "Mojolicious::Plugin::Form" : {
+         "file" : "lib/Mojolicious/Plugin/Form.pm",
+         "version" : "0.008"
+      },
+      "Mojolicious::Plugin::Form::Base" : {
+         "file" : "lib/Mojolicious/Plugin/Form/Base.pm",
+         "version" : "0.008"
       }
    },
    "release_status" : "stable",
@@ -58,10 +70,12 @@
          "web" : "https://github.com/wollmers/Mojolicious-Plugin-Form"
       }
    },
-   "version" : "0.005",
+   "version" : "0.008",
    "x_contributors" : [
-      "Helmut Wollmersdorfer <helmut.wollmersdorfer@fixpunkt.de>",
-      "Helmut Wollmersdorfer <helmut@wollmersdorfer.at>"
-   ]
+      "Helmut Wollmersdorfer <helmut@wollmersdorfer.at>",
+      "Helmut Wollmersdorfer <helmut.wollmersdorfer@fixpunkt.de>"
+   ],
+   "x_serialization_backend" : "Cpanel::JSON::XS version 4.15",
+   "x_static_install" : 1
 }
 
