@@ -27,7 +27,7 @@ Mojolicious::Plugin::Form - abstract forms for Mojolicious and DBIx::Class
 
 # AUTHOR
 
-Helmut Wollmersdorfer, <helmut.wollmersdorfer@gmail.com>
+Helmut Wollmersdorfer, <helmut@wollmersdorfer.at>
 
 <div>
     <a href='http://cpants.cpanauthors.org/author/wollmers'><img src='http://cpants.cpanauthors.org/author/wollmers.png' alt='Kwalitee Score' /></a>
@@ -35,7 +35,7 @@ Helmut Wollmersdorfer, <helmut.wollmersdorfer@gmail.com>
 
 # COPYRIGHT AND LICENSE
 
-Copyright (C) 2013-2015 by Helmut Wollmersdorfer
+Copyright (C) 2013-2020 by Helmut Wollmersdorfer
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
