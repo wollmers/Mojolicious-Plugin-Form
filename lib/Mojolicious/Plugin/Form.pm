@@ -28,7 +28,7 @@ sub register {
       $class_name = $namespace . $class_name;
       #my $e = Mojo::Loader->new->load($class_name);
       #my $e = Mojo::Loader->load_class($class_name);
-      my $e = load_class($class_name);      
+      my $e = load_class($class_name);
 
       Carp::croak qq/Can't load form '$class_name': / . $e->message
         if ref $e;
@@ -83,7 +83,7 @@ L<http://github.com/wollmers/Mojolicious-Plugin-Form>
 
 =head1 AUTHOR
 
-Helmut Wollmersdorfer, E<lt>helmut.wollmersdorfer@gmail.comE<gt>
+Helmut Wollmersdorfer, E<lt>helmut@wollmersdorfer.atE<gt>
 
 =begin html
 
@@ -93,7 +93,7 @@ Helmut Wollmersdorfer, E<lt>helmut.wollmersdorfer@gmail.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2013-2015 by Helmut Wollmersdorfer
+Copyright (C) 2013-2020 by Helmut Wollmersdorfer
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
