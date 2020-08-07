@@ -1,6 +1,7 @@
 Revision history for Mojolicious-Plugin-Form.
 
 {{$NEXT}}
+       - increase minimal version of Mojolicious to 6.10
 
 0.008  2015-04-29 16:22:50 CEST
        - improve tests

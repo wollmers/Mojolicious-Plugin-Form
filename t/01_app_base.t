@@ -51,7 +51,7 @@ does_croak( sub { $t->app->form_handler() } );
 
 my $form = $t->app->form_handler('Bar');
 
-my $fields = $form->from_schema($t->app->schema,'Bar');
+#my $fields = $form->from_schema($t->app->schema,'Bar');
 
 
 

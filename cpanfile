@@ -1,6 +1,6 @@
-requires 'perl', '5.020001';
+requires 'perl', '5.010001';
 
-requires 'Mojolicious', '8.0';
+requires 'Mojolicious', '6.10';
 
 # requires 'Some::Module', 'VERSION';
 
