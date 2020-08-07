@@ -3,7 +3,7 @@ use Mojo::Base 'Mojolicious::Plugin';
 
 use Mojo::Loader qw(data_section find_modules load_class);
 
-our $VERSION = '0.008';
+our $VERSION = '0.009';
 
 sub register {
   my ($self, $app, $conf) = @_;

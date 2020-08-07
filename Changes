@@ -1,6 +1,8 @@
 Revision history for Mojolicious-Plugin-Form.
 
 {{$NEXT}}
+
+0.009  2020-08-07 06:00:31 CEST
        - increase minimal version of Mojolicious to 6.10
 
 0.008  2015-04-29 16:22:50 CEST
